@@ -1,0 +1,264 @@
+{
+  "penyakit": [
+    {
+      "id": "P01",
+      "nama": "Demam Berdarah Dengue (DBD)",
+      "prior_prob": 0.05,
+      "threshold": 0.85,
+      "tindakan": "Rawat inap segera. Lakukan cek darah lengkap untuk memantau trombosit.",
+      "gejala": {
+        "demam_tinggi": { "likelihood": 0.90, "kritis": false },
+        "bintik_merah_kulit": { "likelihood": 0.75, "kritis": true },
+        "nyeri_sendi": { "likelihood": 0.60, "kritis": false },
+        "mual_muntah": { "likelihood": 0.50, "kritis": false }
+      }
+    },
+    {
+      "id": "P02",
+      "nama": "Tifus (Demam Tifoid)",
+      "prior_prob": 0.08,
+      "threshold": 0.80,
+      "tindakan": "Istirahat total, konsumsi makanan lunak, dan gunakan antibiotik sesuai resep dokter.",
+      "gejala": {
+        "demam_tinggi": { "likelihood": 0.85, "kritis": false },
+        "sakit_perut": { "likelihood": 0.70, "kritis": false },
+        "lidah_putih": { "likelihood": 0.60, "kritis": false },
+        "diare": { "likelihood": 0.40, "kritis": false }
+      }
+    },
+    {
+      "id": "P03",
+      "nama": "Influenza (Flu Biasa)",
+      "prior_prob": 0.20,
+      "threshold": 0.75,
+      "tindakan": "Istirahat yang cukup, perbanyak minum air putih, dan minum obat pereda gejala flu.",
+      "gejala": {
+        "demam_ringan": { "likelihood": 0.80, "kritis": false },
+        "pilek_hidung_tersumbat": { "likelihood": 0.95, "kritis": false },
+        "sakit_tenggorokan": { "likelihood": 0.70, "kritis": false },
+        "bersin_bersin": { "likelihood": 0.85, "kritis": false }
+      }
+    },
+    {
+      "id": "P04",
+      "nama": "COVID-19",
+      "prior_prob": 0.10,
+      "threshold": 0.85,
+      "tindakan": "Isolasi mandiri. Jika sesak napas memburuk, segera hubungi fasilitas kesehatan terdekat.",
+      "gejala": {
+        "demam_tinggi": { "likelihood": 0.80, "kritis": false },
+        "batuk_kering": { "likelihood": 0.85, "kritis": false },
+        "hilang_penciuman_rasa": { "likelihood": 0.70, "kritis": false },
+        "sesak_napas": { "likelihood": 0.60, "kritis": true }
+      }
+    },
+    {
+      "id": "P05",
+      "nama": "Malaria",
+      "prior_prob": 0.03,
+      "threshold": 0.80,
+      "tindakan": "Segera ke rumah sakit untuk tes parasit darah dan pemberian obat antimalaria.",
+      "gejala": {
+        "demam_menggigil": { "likelihood": 0.90, "kritis": false },
+        "keringat_berlebih": { "likelihood": 0.80, "kritis": false },
+        "sakit_kepala": { "likelihood": 0.65, "kritis": false },
+        "nyeri_otot": { "likelihood": 0.50, "kritis": false }
+      }
+    },
+    {
+      "id": "P06",
+      "nama": "Gastritis (Maag)",
+      "prior_prob": 0.15,
+      "threshold": 0.80,
+      "tindakan": "Hindari makanan pedas dan asam. Minum obat antasida sebelum makan.",
+      "gejala": {
+        "nyeri_ulu_hati": { "likelihood": 0.90, "kritis": false },
+        "mual_muntah": { "likelihood": 0.85, "kritis": false },
+        "perut_kembung": { "likelihood": 0.75, "kritis": false },
+        "cepat_kenyang": { "likelihood": 0.60, "kritis": false }
+      }
+    },
+    {
+      "id": "P07",
+      "nama": "Asma",
+      "prior_prob": 0.07,
+      "threshold": 0.85,
+      "tindakan": "Gunakan inhaler sesuai resep. Hindari pemicu alergi dan debu.",
+      "gejala": {
+        "sesak_napas": { "likelihood": 0.95, "kritis": true },
+        "napas_berbunyi_mengi": { "likelihood": 0.90, "kritis": false },
+        "batuk_malam_hari": { "likelihood": 0.70, "kritis": false },
+        "dada_terasa_berat": { "likelihood": 0.80, "kritis": false }
+      }
+    },
+    {
+      "id": "P08",
+      "nama": "Tuberkulosis (TBC)",
+      "prior_prob": 0.04,
+      "threshold": 0.85,
+      "tindakan": "Lakukan rontgen dada dan tes dahak. Pengobatan OAT wajib rutin 6 bulan.",
+      "gejala": {
+        "batuk_lebih_3_minggu": { "likelihood": 0.90, "kritis": true },
+        "keringat_malam": { "likelihood": 0.80, "kritis": false },
+        "berat_badan_turun": { "likelihood": 0.75, "kritis": false },
+        "batuk_berdarah": { "likelihood": 0.50, "kritis": true }
+      }
+    },
+    {
+      "id": "P09",
+      "nama": "Gastroenteritis (Diare)",
+      "prior_prob": 0.12,
+      "threshold": 0.80,
+      "tindakan": "Cegah dehidrasi dengan minum oralit. Makan makanan yang mudah dicerna.",
+      "gejala": {
+        "BAB_cair_berulang": { "likelihood": 0.95, "kritis": false },
+        "kram_perut": { "likelihood": 0.85, "kritis": false },
+        "mual_muntah": { "likelihood": 0.70, "kritis": false },
+        "tanda_dehidrasi": { "likelihood": 0.50, "kritis": true }
+      }
+    },
+    {
+      "id": "P10",
+      "nama": "Hipertensi",
+      "prior_prob": 0.18,
+      "threshold": 0.80,
+      "tindakan": "Kontrol tekanan darah ke klinik. Kurangi asupan garam dan hindari stres.",
+      "gejala": {
+        "sakit_kepala": { "likelihood": 0.60, "kritis": false },
+        "tengkuk_terasa_berat": { "likelihood": 0.70, "kritis": false },
+        "penglihatan_kabur": { "likelihood": 0.40, "kritis": true },
+        "jantung_berdebar": { "likelihood": 0.50, "kritis": false }
+      }
+    },
+    {
+      "id": "P11",
+      "nama": "Diabetes Mellitus",
+      "prior_prob": 0.10,
+      "threshold": 0.85,
+      "tindakan": "Cek gula darah puasa. Jaga pola makan rendah karbohidrat dan gula.",
+      "gejala": {
+        "sering_haus": { "likelihood": 0.85, "kritis": false },
+        "sering_buang_air_kecil": { "likelihood": 0.80, "kritis": false },
+        "luka_sulit_sembuh": { "likelihood": 0.70, "kritis": true },
+        "cepat_lelah": { "likelihood": 0.75, "kritis": false }
+      }
+    },
+    {
+      "id": "P12",
+      "nama": "Migrain",
+      "prior_prob": 0.12,
+      "threshold": 0.75,
+      "tindakan": "Istirahat di ruangan gelap dan tenang. Minum obat pereda nyeri.",
+      "gejala": {
+        "sakit_kepala_sebelah": { "likelihood": 0.95, "kritis": false },
+        "sensitif_cahaya_suara": { "likelihood": 0.80, "kritis": false },
+        "mual_muntah": { "likelihood": 0.60, "kritis": false },
+        "pandangan_berkunang": { "likelihood": 0.50, "kritis": false }
+      }
+    },
+    {
+      "id": "P13",
+      "nama": "Anemia",
+      "prior_prob": 0.08,
+      "threshold": 0.80,
+      "tindakan": "Tingkatkan konsumsi makanan kaya zat besi atau minum suplemen penambah darah.",
+      "gejala": {
+        "kulit_pucat": { "likelihood": 0.85, "kritis": false },
+        "cepat_lelah": { "likelihood": 0.90, "kritis": false },
+        "sering_pusing": { "likelihood": 0.80, "kritis": false },
+        "mata_berkunang": { "likelihood": 0.70, "kritis": false }
+      }
+    },
+    {
+      "id": "P14",
+      "nama": "Faringitis (Radang Tenggorokan)",
+      "prior_prob": 0.15,
+      "threshold": 0.75,
+      "tindakan": "Perbanyak minum air hangat, kumur air garam, dan hindari makanan berminyak.",
+      "gejala": {
+        "sakit_menelan": { "likelihood": 0.95, "kritis": false },
+        "tenggorokan_kering": { "likelihood": 0.85, "kritis": false },
+        "suara_serak": { "likelihood": 0.70, "kritis": false },
+        "demam_ringan": { "likelihood": 0.60, "kritis": false }
+      }
+    },
+    {
+      "id": "P15",
+      "nama": "Cacar Air (Varicella)",
+      "prior_prob": 0.04,
+      "threshold": 0.85,
+      "tindakan": "Hindari menggaruk ruam untuk mencegah infeksi sekunder. Gunakan bedak salisil.",
+      "gejala": {
+        "ruam_merah_berair": { "likelihood": 0.95, "kritis": false },
+        "gatal_seluruh_tubuh": { "likelihood": 0.90, "kritis": false },
+        "demam_ringan": { "likelihood": 0.70, "kritis": false },
+        "kelelahan": { "likelihood": 0.60, "kritis": false }
+      }
+    },
+    {
+      "id": "P16",
+      "nama": "Campak (Measles)",
+      "prior_prob": 0.03,
+      "threshold": 0.85,
+      "tindakan": "Isolasi penderita karena sangat menular. Berikan suplemen Vitamin A sesuai anjuran dokter.",
+      "gejala": {
+        "demam_tinggi": { "likelihood": 0.85, "kritis": false },
+        "ruam_merah_menyebar": { "likelihood": 0.90, "kritis": false },
+        "mata_merah_berair": { "likelihood": 0.75, "kritis": false },
+        "bercak_putih_mulut": { "likelihood": 0.60, "kritis": false }
+      }
+    },
+    {
+      "id": "P17",
+      "nama": "Pneumonia (Paru-Paru Basah)",
+      "prior_prob": 0.04,
+      "threshold": 0.85,
+      "tindakan": "Membutuhkan evaluasi medis segera. Mungkin perlu rawat inap dan antibiotik kuat.",
+      "gejala": {
+        "batuk_berdahak_kental": { "likelihood": 0.85, "kritis": false },
+        "sesak_napas": { "likelihood": 0.90, "kritis": true },
+        "nyeri_dada_saat_napas": { "likelihood": 0.80, "kritis": true },
+        "demam_menggigil": { "likelihood": 0.70, "kritis": false }
+      }
+    },
+    {
+      "id": "P18",
+      "nama": "Gout (Asam Urat)",
+      "prior_prob": 0.09,
+      "threshold": 0.80,
+      "tindakan": "Hindari makanan tinggi purin (jeroan, emping). Minum obat penurun asam urat.",
+      "gejala": {
+        "nyeri_sendi_hebat": { "likelihood": 0.95, "kritis": false },
+        "sendi_bengkak_kemerahan": { "likelihood": 0.85, "kritis": false },
+        "terasa_panas_di_sendi": { "likelihood": 0.75, "kritis": false },
+        "nyeri_saat_bergerak": { "likelihood": 0.80, "kritis": false }
+      }
+    },
+    {
+      "id": "P19",
+      "nama": "Hiperkolesterolemia (Kolesterol Tinggi)",
+      "prior_prob": 0.12,
+      "threshold": 0.75,
+      "tindakan": "Perbaiki pola makan dengan rendah lemak jenuh. Rutin berolahraga.",
+      "gejala": {
+        "tengkuk_terasa_berat": { "likelihood": 0.80, "kritis": false },
+        "sering_kesemutan": { "likelihood": 0.75, "kritis": false },
+        "nyeri_dada_kiri": { "likelihood": 0.40, "kritis": true },
+        "cepat_lelah": { "likelihood": 0.60, "kritis": false }
+      }
+    },
+    {
+      "id": "P20",
+      "nama": "Apendisitis (Usus Buntu)",
+      "prior_prob": 0.02,
+      "threshold": 0.85,
+      "tindakan": "Kondisi darurat bedah. Segera ke IGD untuk operasi pengangkatan usus buntu.",
+      "gejala": {
+        "nyeri_perut_kanan_bawah": { "likelihood": 0.95, "kritis": true },
+        "mual_muntah": { "likelihood": 0.80, "kritis": false },
+        "demam_ringan": { "likelihood": 0.60, "kritis": false },
+        "hilang_nafsu_makan": { "likelihood": 0.70, "kritis": false }
+      }
+    }
+  ]
+}
